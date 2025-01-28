@@ -1,0 +1,15 @@
+@use "Display";
+
+@include Display.responsive(tablet){
+    main{
+        .cuerpo{
+            .ProductosFav{
+                .card{
+                    flex: 1 1 calc(33.33% - 20px);
+                }
+            }
+        }
+      
+         
+    }
+}

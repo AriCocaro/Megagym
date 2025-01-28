@@ -1,0 +1,17 @@
+@use "Display";
+
+@include Display.responsive(desktop){
+main{
+    .carousel{
+        top:50px;
+        height: auto;
+        .carousel-inner{
+            img{
+                width: 100vw;
+                height: 100vw;
+                object-fit: cover;
+            }
+        }
+    }
+}
+}

@@ -7,7 +7,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/Estilo.css" />
+    <link rel="stylesheet" href="../CSS/Estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,43 +16,66 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conocenos - Megagym</title>
+    <title>Conocenos | Megagym</title>
+    <link rel="shortcut icon" href="../Assets/Imagenes/Logos/BotonSinFondo.png" type="image/x-icon">
   </head>
   <body>
-    <div class="encabezado">
+    <div class="Encabezado">
       <header>
-        <figure>
-          <div class="imagenes">
-            <img
-              src="../Assets/Imagenes/MegagymBlanco.png"
-              alt="MegagymBlanco"
-              style="width: 510.75px; height: 138.5px"
-            />
-            <img
-              src="../Assets/Imagenes/BotonSinFondo.png"
-              alt="no anda Ari"
-              style="width: 138.5px; height: 138.5px; right: 0%"
-            />
-          </div>
-        </figure>
+       <figure class="ImagenesEncabezado">
+         <img 
+           src="../Assets/Imagenes/MegagymBlanco.png"
+           alt="MegagymBlanco"
+           class="MegagymBlanco"
+          />
+          <img
+            src="../Assets/Imagenes/BotonSinFondo.png"
+            alt="no anda Ari"
+            class="BotonMegagym"
+          />
+         </figure>
       </header>
-    </div>
-
-    <div class="mainContainer">
-      <nav class="MenuFijo">
-        <ul>
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./Conocenos.html">CONOCENOS</a></li>
-          <li><a href="./Eventos.html">ACOMPAÑAMOS</a></li>
-          <li><a href="./DeptoTecnico.html">DEPTO. TECNICO</a></li>
-          <li><a href="./Tienda.html">TIENDA</a></li>
-          <li><a href="./IniciarSesion.html">INICIAR SESION</a></li>
-        </ul>
-      </nav>
-
+   </div>
+   <nav class="BarraDeNavegacion NavFija" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="w3_close()" class="ItemNav Boton X">X</a></li>
+        <li><a href="../index.html" onclick="w3_close()" class="ItemNav Boton">INICIO</a> </li>
+        <li><a href="./Conocenos.html" onclick="w3_close()" class="ItemNav Boton">CONOCENOS</a> </li>
+        <li><a href="./Eventos.html" onclick="w3_close()" class="ItemNav Boton">PRESENTES EN</a> </li>
+        <li><a href="./Tienda.html" onclick="w3_close()" class="ItemNav Boton">TIENDA</a></li>
+        <li><a href="./DeptoTecnico.html" onclick="w3_close()" class="ItemNav Boton">DEPARTAMENTO TECNICO</a></li>
+        <li><a href="./IniciarSesion.html" onclick="w3_close()" class="ItemNav Boton">INICIAR SESION</a></li>
+     </ul>
+    </nav>
+  
+    <!-- Top menu on small screens -->
+   <header class="BarraDeNavegacion EncabezadoS">
+      <span class="ImgIzq"><img src="../Assets/Imagenes/MegagymBlanco.png" alt="Logo Megagym Blanco"></span>
+      <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+   </header>
+  
+   <!-- Overlay effect when opening sidebar on small screens -->
+   <div class="EfectoOverlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+   </div>
       <main>
         <div class="cuerpo">
           <!--buscar fotos y videos de megarun y del gym-->
+          <section class="Ubicacion">
+            <h1>Estamos Ubicados en</h1>
+
+            <div class="ContenedorFrente">
+
+              <img class="GymFrente"  src="../Assets/Imagenes/ImagenesGym/frente 1 editado.png" alt="ImagenFrente">
+              <iframe class="Map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.0643507156933!2d-58.51962702437106!3d-33.00207887469038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa827d0b53203%3A0xcc811859434b0529!2sMega%20Gym!5e0!3m2!1ses!2sar!4v1737480845385!5m2!1ses!2sar" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
+           </div>
+
+
+          </section>
           <section>
             <h1>Nuestras Instalaciones</h1>
             <div id="carouselExample" class="carousel slide">
@@ -128,23 +151,7 @@
               </div>
             </div>
             
-          <!--  <div class="Instructor">
-              <img src="../Assets/Imagenes/DSC_4956.JPG" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Ari</h5>
-                <p class="card-text">Nuestra Nutri administrativa</p>
-                <p class="card-text"><small>De lunes a viernes de 7 a 15 hs</small></p>
-              </div>
-            </div>
-            <div class="Instructor">
-              <img src="../Assets/Imagenes/DSC_4956.JPG" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Cari</h5>
-                <p class="card-text"></p>
-                <p class="card-text"><small>De lunes a viernes de 14 a 22 hs</small></p>
-              </div>
-            </div>
-           </div>-->
+          
 
            
             <!--poner fotos de los chicos donde al pasar por encima se vea el horario-->
@@ -166,43 +173,58 @@
           </section>
 
           <section>
-            <h1>Contacto</h1>
-            <form action="Contacto" method="post">
-              <div>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre " id="Nombre" />
-              </div>
-              <div>
-                <label for="NumeroTel">Numero de contacto</label>
-                <input type="number" name="NumeroTel" id="NumeroTel" />
-              </div>
-              <div>
-                <label for="Email">Email</label>
-                <input type="email" name="Email" id="Email" />
-              </div>
-              <div>
-                <label for="Consulta">Dejanos tu consulta</label>
-                <input type="text" name="Consulta" id="Consulta" />
-              </div>
-              <div>
-                <label for="ContactoMed"
-                  >Deseo que me contacten por medio de:</label
-                >
-                <label for="Email">Email</label>
-                <input type="radio" name="Email" id="Email" />
-                <label for="Whatsapp">Whatsapp</label>
-                <input type="radio" name="Whatsapp" id="NumeroTel" />
-              </div>
-              <input type="submit" value="Enviar" />
+            <form>
+             
+                <legend>Contacto</legend>
+                <div class="mb-3">
+                  <label for="disabledTextInput" class="form-label">Nombre</label>
+                  <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="disabledTextInput" class="form-label">N° de contacto</label>
+                  <input type="number" id="disabledTextInput" class="form-control" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="disabledTextInput" class="form-label">E-Mail</label>
+                  <input type="email" id="disabledTextInput" class="form-control" placeholder="">
+                </div>
+                <div class="mb-3">
+                  <label for="Consulta">Dejanos tu consulta</label>
+                  <textarea class="form-control" placeholder="" id="Consulta" style="height: 100px"></textarea>
+                
+                </div>
+                <div>
+                  <label for="ContactoMed">Deseo que me contacten mediante</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Whatsapp
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    E-mail
+                  </label>
+                </div>
+
+               <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </div>
+            
             </form>
           </section>
+
+
         </div>
       </main>
     </div>
 
     <footer>
       <div class="pie">
-        <h4>Sabemos los que hacemos.</h4>
+        <h4>Sabemos lo que hacemos.</h4>
 
         <div class="item">
           <a href="https://www.instagram.com/megagymgchu/">
@@ -246,5 +268,18 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      <!--Script to open and close sidebar-->
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+      
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+   </script>
+
   </body>
 </html>

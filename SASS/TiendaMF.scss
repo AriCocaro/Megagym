@@ -1,0 +1,13 @@
+@use "Display";
+
+@include Display.responsive(mobile){
+    main{
+        .cuerpo{
+            .ProductosFav{
+                .card{
+                    flex: 1 1 100%;
+                }
+            }
+        }
+    }
+}

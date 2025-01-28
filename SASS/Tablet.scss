@@ -1,0 +1,27 @@
+@use "Display" ;
+@use "Conocenos";
+ 
+
+@include Display.responsive(tablet){
+  body{
+    .EncabezadoS{
+      display: flex;
+      position: fixed;
+      background-color: rgb(43,42,42);
+
+
+    }
+  }
+
+  
+    main{
+      display: flex;
+      margin-top: 15px;
+      .cuerpo{
+        display: block;
+        padding: 50px;
+      }
+    }
+  }
+      
+      

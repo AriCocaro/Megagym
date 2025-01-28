@@ -1,0 +1,37 @@
+@use "Display";
+
+@include Display.responsive(desktop){
+    body{
+        .Encabezado{
+            display: block;
+            position: fixed;
+        }
+        .BarraDeNavegacion.EncabezadoS{
+            display: none;
+        }
+        .BarraDeNavegacion.NavFija{
+            display: block;
+            
+            .X{
+                display: none;
+                pointer-events: none;
+            }
+            .X:hover {
+                display: none !important; // Previene cualquier efecto hover
+            }
+        }
+
+        main{
+            display: flex;
+            position: relative;
+            margin-top: 138.5px;
+            margin-left: 300px;
+            padding: 20px;
+
+
+        }
+
+ 
+
+    }
+}

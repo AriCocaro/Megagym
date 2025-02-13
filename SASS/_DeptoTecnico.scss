@@ -1,0 +1,26 @@
+@use "General" ;
+
+body {
+    main {
+      .cuerpo {
+        a { // Aplica solo a enlaces (botones)
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+  
+          img.me-2 { // Selecciona solo la imagen dentro del botón
+            filter: invert(100%);
+            max-width: 20px;
+            height: auto;
+          }
+  
+          .serv {
+            text-align: center;
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  

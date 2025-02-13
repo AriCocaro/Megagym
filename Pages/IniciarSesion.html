@@ -7,45 +7,56 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../CSS/Estilo.css" />
-    <link rel="shortcut icon" href="../Assets/Imagenes/Logos/BotonSinFondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesion | Megagym</title>
+    <title>Conocenos | Megagym</title>
     <link rel="shortcut icon" href="../Assets/Imagenes/Logos/BotonSinFondo.png" type="image/x-icon">
   </head>
   <body>
-    <div class="encabezado">
+    <div class="Encabezado">
       <header>
-        <figure>
-          <div class="imagenes">
-            <img
-              src="../Assets/Imagenes/MegagymBlanco.png"
-              alt="MegagymBlanco"
-              style="width: 510.75px; height: 138.5px"
-            />
-            <img
-              src="../Assets/Imagenes/BotonSinFondo.png"
-              alt="Logo oficial de megagym"
-              style="width: 138.5px; height: 138.5px; right: 0%"
-            />
-          </div>
-        </figure>
+       <figure class="ImagenesEncabezado">
+         <img 
+           src="../Assets/Imagenes/MegagymBlanco.png"
+           alt="MegagymBlanco"
+           class="MegagymBlanco"
+          />
+          <img
+            src="../Assets/Imagenes/BotonSinFondo.png"
+            alt="LogoMegagym"
+            class="BotonMegagym"
+          />
+         </figure>
       </header>
-    </div>
-
-    <div class="mainContainer">
-      <nav class="MenuFijo">
-        <ul>
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./Conocenos.html">CONOCENOS</a></li>
-          <li><a href="./Eventos.html">ACOMPAÑAMOS</a></li>
-          <li><a href="./DeptoTecnico.html">DEPTO. TECNICO</a></li>
-          <li><a href="./Tienda.html">TIENDA</a></li>
-          <li><a href="./IniciarSesion.html">INICIAR SESION</a></li>
-        </ul>
-      </nav>
-
+   </div>
+   <nav class="BarraDeNavegacion NavFija" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="w3_close()" class="ItemNav Boton X">X</a></li>
+        <li><a href="../index.html" onclick="w3_close()" class="ItemNav Boton">INICIO</a> </li>
+        <li><a href="./Conocenos.html" onclick="w3_close()" class="ItemNav Boton">CONOCENOS</a> </li>
+        <li><a href="./Eventos.html" onclick="w3_close()" class="ItemNav Boton">PRESENTES EN</a> </li>
+        <li><a href="./Tienda.html" onclick="w3_close()" class="ItemNav Boton">TIENDA</a></li>
+        <li><a href="./DeptoTecnico.html" onclick="w3_close()" class="ItemNav Boton">DEPARTAMENTO TECNICO</a></li>
+        <li><a href="./IniciarSesion.html" onclick="w3_close()" class="ItemNav Boton">INICIAR SESION</a></li>
+     </ul>
+    </nav>
+  
+    <!-- Top menu on small screens -->
+   <header class="BarraDeNavegacion EncabezadoS">
+      <span class="ImgIzq"><img src="../Assets/Imagenes/MegagymBlanco.png" alt="Logo Megagym Blanco"></span>
+      <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+   </header>
+  
+   <!-- Overlay effect when opening sidebar on small screens -->
+   <div class="EfectoOverlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+   </div>
       <main>
         <div class="cuerpo">
           <form action="InicioDeSesion">

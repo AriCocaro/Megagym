@@ -59,16 +59,14 @@
    </div>
       <main>
         <div class="cuerpo">
-          <form action="InicioDeSesion">
-            Iniciar Sesion
-            <div><label for="Usuario">Usuario</label></div>
-            <div><input type="text" name="Usuario" id="Usuario" /></div>
-            <div><label for="Contraseña">Contraseña</label></div>
-            <div>
-              <input type="password" name="Contraseña" id="Contraseña" />
-            </div>
-            <input type="submit" value="Entrar" />
-          </form>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresá tu usuario">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Ingresá tu contraseña">
+          </div>
         </div>
       </main>
     </div>
@@ -115,9 +113,22 @@
     </footer>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    <!--Script to open and close sidebar-->
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+ </script>
+
   </body>
 </html>

@@ -48,6 +48,11 @@ body{
                 border-radius: 8px;
                 overflow: hidden;
                 transition: transform 0.3s ease, background-color 0.3 ease;
+                .card-body{
+                    .text-primary{
+                        color: white;
+                    }
+                }
 
             }
             .mb-3{
@@ -73,18 +78,24 @@ body{
                display: flex;
                flex-direction: column;
                justify-content: space-between;
-            }
             
+            }
+
+                  
             .btn {
                 margin-top: auto;
                 align-self: center;
                 display: block;
                 transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+                background-color: black;
+                color: rgba(224,202,57,1);
             }
             
             /* Cambiar el color de fondo del botón cuando se pasa el ratón */
             .card:hover .btn {
-                background-color:rgb(206, 220, 114); /* Color de fondo al hacer hover (puedes cambiarlo) */
+                background-color:rgba(224,202,57,1);
+                color: black; /* Color de fondo al hacer hover (puedes cambiarlo) */
+                border: none;
             }
             
             /* Cambiar el color del texto del botón cuando se pasa el ratón */
@@ -95,6 +106,13 @@ body{
             .card-text{
                 color: white;
             }
+
+            .card-body span {
+                color: white; // Aplica el color blanco directamente
+                font-weight: bold; // Opcional, para resaltar
+              }
+              
+         
         }
 
     }
